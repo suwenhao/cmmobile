@@ -1,0 +1,28 @@
+.info-page{
+    .form{
+        border-right:1px solid #eee;
+        border-left:1px solid #eee;
+    }
+    .info-containter{
+        padding-bottom:10px;
+    }
+    .avatar-box{
+        .avatar-select{
+            span{
+                padding:10px 0;
+                text-align: center;
+                background: #fff;
+                display: block;
+            }
+            .avatar-flex{
+                background: #fff;
+                padding-bottom:10px;
+                .avatar{
+                    display: block;
+                    width:30%;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

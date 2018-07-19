@@ -1,0 +1,16 @@
+.dashboard-page{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+    height:100%;
+    justify-content: space-between;
+    .dashboard-content{
+        flex:1;
+        overflow-y: auto;
+    }
+    .dashboard-footer{
+        height:50px;
+    }
+}

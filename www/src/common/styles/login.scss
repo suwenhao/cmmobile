@@ -1,0 +1,13 @@
+.login-page{
+    h2.title{
+        text-align: center;
+    }
+    .form{
+        border-right:1px solid #eee;
+        border-left:1px solid #eee;
+    }
+    .error-msg{
+        color:red;
+        padding-left:15px;
+    }
+}

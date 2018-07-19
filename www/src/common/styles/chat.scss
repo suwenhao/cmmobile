@@ -1,0 +1,159 @@
+* { touch-action: none; }
+.chat-page{
+    position:fixed;
+    width:100%;
+    height: 100%;
+    z-index: 1;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .chat-body{
+        overflow: auto;
+        flex:1;
+        padding:0 10px;
+        .chat-item{
+            margin-top:10px;
+            overflow: hidden;
+            .item-time{
+                line-height: 20px;
+                text-align: left;
+                span{
+                    color:#555;
+                    display: inline-block;
+                    font-size:12px;
+                    margin-bottom:5px;
+                    padding:1px 5px;
+                    border-radius: 3px;
+                }
+            }
+            .item-head{
+                display: flex;
+                align-items: center;
+                img{
+                    height:35;
+                    width:35px;
+                    display: block;
+                    border-radius:45px;
+                    border:1px solid #ccc;
+                }
+                span{
+                    display: block;
+                    margin-left:10px;
+                }
+            }
+            .item-body{
+                span{
+                    clear:left;
+                    clear:right;
+                    display: inline-block;
+                    background-color: #fff;
+                    color:#000;
+                    border:1px solid #eee;
+                    border-radius:4px;
+                    padding:10px;
+                    word-break: break-all;
+                    font-size:16px;
+                }
+                i{
+                    width: 0;
+                    height: 0;
+                    border-width: 7px;
+                    border-style: solid;
+                    float:left;
+                    overflow: hidden;
+                    margin-left:3px;
+                    display: block;
+                    border-color: transparent transparent #fff transparent;
+                }
+                margin:3px 20px;
+                display: inline-block;
+            }
+        }
+        .item-right{
+            .item-time{
+                text-align: right;
+            }
+            .item-head{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                overflow: hidden;
+                span{
+                    margin-right:10px;
+                }
+            }
+            .item-body{
+                float: right;
+                margin-right:5px;
+                span{
+                    background-color: #62b900;
+                    color:#fff;
+                }
+                i{
+                    float:right;
+                    margin-right:3px;
+                    border-color: transparent transparent #62b900 transparent;
+                }
+            }
+        }
+        .chat-item:last-child{
+            margin-bottom:10px;
+        }
+    }
+    .chat-footer{
+        display: flex;
+        border-top:1px solid #eee;
+        justify-content: space-between;
+        .chat-footer-l{
+            flex:1;
+            input{
+                display: block;
+                width:100%;
+                height:50px;
+                line-height:50px;
+                margin:0;
+                padding:0;
+                outline: none;
+                border:0;
+                text-indent: 10px;
+            }
+        }
+        .chat-footer-r{
+            clear:right;
+            button{
+                padding:0 20px;
+                margin:0;
+                height:50px;
+                line-height:50px;
+                display: block;
+                float: left;
+                overflow: hidden;
+                background-color: #108ee9;
+                border:0;
+                border-right:1px solid #fff;
+                color:#fff;
+                &:active{
+                    background-color: #222;
+                }
+            }
+            .emojibtn{
+                font-size:18px;
+                background-color: #eee;
+            }
+            .emojibtn:active{
+                background-color: #555;
+            }
+        }
+    }
+}
+.emoji{
+    .am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon{
+        display: none;
+    }
+    .am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-text{
+        margin-top:0;
+        font-size:16px;
+    }
+}
