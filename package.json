@@ -48,7 +48,7 @@
     "express": "^4.16.3",
     "good-storage": "^1.0.1",
     "history": "^4.7.2",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "mockjs": "^1.0.1-beta3",
     "mongoose": "^5.2.1",
     "prop-types": "^15.6.1",
