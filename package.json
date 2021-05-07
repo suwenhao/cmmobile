@@ -64,7 +64,7 @@
     "socket.io": "^2.0.0",
     "socket.io-client": "^2.0.0",
     "styled-components": "^3.3.2",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "utility": "^1.13.1"
   }
 }
